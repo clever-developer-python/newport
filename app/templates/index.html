@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Ninaad - portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        body{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .content{
+            text-align: center;
+            margin: auto;
+        }
+
+        hr{
+            width: 50%;
+        }
+
+
+        .grid-container {
+  display: grid;
+  grid: 100px/ 300px 300px 300px;
+  grid-gap: 30px;
+  padding: 5px;
+  justify-content: center;
+  
+}
+
+
+        
+
+        
+
+    </style>
+
+
+    <div class="content">
+
+        <header>
+
+          <div class="alert alert-success" role="alert">
+            {% if request.method %}
+            Boom your email has been sent
+            {% endif %}
+          </div>
+
+            <center><nav class="navbar navbar-light justify-content-between" style="width: 50%;">
+                <a class="navbar-brand">Ninaad Ravi</a>
+                <form class="form-inline">
+                    <a class="nav-link" style="color: black;" href="mailto:ninaadr26@gmail.com">Email</a>
+                    <a class="nav-link" style="color: black;" href="https://github.com/clever-developer-python">Github</a>
+                </form>
+              </nav></center>
+
+
+        </header>
+
+        <br>
+        <br>
+        <br>
+      
+
+
+
+        <center><div class="card flex-md-row mb-4 box-shadow h-md-250" style="width: 650px; border: 0px;">
+            <div class="card-body d-flex flex-column align-items-start">
+              <h3 class="mb-0">
+                <br>
+                <a class="text-dark" >Hello I am Ninaad 👋</a>
+                <br>
+                <br>
+              </h3>
+              <p class="card-text mb-auto">Hello I am Ninaad! Young fullstack web developer based in India. I have 3 years of programming experience and 2 years in web!</p>
+            </div>
+          
+        </div></center>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h5>Work.</h5>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="grid-container" >
+         <div class="item1">
+            <div class="card" style="width: 15rem;">
+              <div class="card-body">
+                <h5 class="card-title">Isana</h5>
+                <h6 class="card-subtitle mb-2 text-muted">In Development</h6>
+                <p class="card-text">Ecommerce website for the Isana co company.  </p>
+    
+              </div>
+            </div>
+          </div>
+          <div class="item2">
+            <div class="card" style="width: 15rem;">
+              <div class="card-body">
+                <h5 class="card-title">meet website </h5>
+                <h6 class="card-subtitle mb-2 text-muted">In Development</h6>
+                <p class="card-text">a simple zoom like webiste but made simpler to use.</p>
+     
+              </div>
+            </div>
+          </div>
+          <div class="item3">
+            <div class="card" style="width: 15rem;">
+              <div class="card-body">
+                <h5 class="card-title">Buddy ai </h5>
+                <h6 class="card-subtitle mb-2 text-muted">done</h6>
+                <p class="card-text">Your AI companion while programming </p>
+               
+              </div>
+            </div>
+
+            
+          </div>  
+          
+          
+          </div></div>
+          
+
+          <br>
+ 
+       
+          <br>
+          <br><br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+
+          <center><h4>Contact Us</h4></center>
+          <br>
+          <br>
+          <form method="POST">
+            {% csrf_token %}
+          <center><textarea class="form-control" style="width: 40%;" id="exampleFormControlTextarea1" name="text" placeholder="Dont Forget To Add The Sneaky Email To The Mail :)" rows="3"></textarea></center>
+        </div>
+        <br>
+       <center> <button type="button" class="btn btn-primary">Lets get in touch!</button></center>
+      </form>
+
+
+        
+      </div>
+    </div>
+
+   
+
+
+      
+
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
